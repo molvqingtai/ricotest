@@ -1,0 +1,48 @@
+/* standards */
+
+.content-wrapper .row .logo-wrapper {
+    height: 120px;
+}
+
+.content-wrapper .row img {
+    max-height: 120px;
+    width: 50%;
+}
+
+.content-wrapper .row p {
+    font-weight: 300;
+    color: #666666;
+}
+
+.content-wrapper .row h5 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+}
+
+.content-wrapper .title-wrapper h4 {
+    font-weight: 300;
+    position: relative;
+    margin: 50px 0;
+    padding: 10px 0;
+}
+
+.content-wrapper .article-wrapper h4::after {
+    content: "";
+    height: 2px;
+    width: 70px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ad1457;
+}
+.content-wrapper .text-wrapper{
+    color: #666666;
+    font-weight: 300;
+}
+.content-wrapper .article-wrapper{
+    margin: 100px 0;
+}

@@ -1,0 +1,27 @@
+/* products */
+
+
+.content-wrapper .col {
+    margin-bottom: 50px;
+}
+
+.content-wrapper .card-image{
+    height: 0;
+    padding-bottom: 70%;
+    overflow: hidden;
+}
+.content-wrapper .card-image img{
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+}
+.content-wrapper .card-text {
+    color: #666666;
+    font-weight: lighter;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    height: 42px;
+}

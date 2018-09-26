@@ -1,0 +1,26 @@
+/* article */
+.content-wrapper .article-wrapper {
+    /* overflow: hidden; */
+    position: relative;
+    margin-bottom: 100px;
+}
+
+.content-wrapper .article {
+    float: none;
+    margin: auto;
+}
+
+.content-wrapper .article img {
+    max-width: 100%!important;
+    height: auto !important;
+    margin-top: 10px !important;
+    margin-bottom: 20px !important;
+    box-shadow: 0 5px 20px 3px #CCCCCC !important;
+    box-sizing: border-box !important;
+}
+.content-wrapper .article table{
+    margin: 20px 0;
+}
+.content-wrapper .article table td{
+    padding: 10px 20px;
+}

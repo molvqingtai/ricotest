@@ -1,0 +1,54 @@
+/* contact */
+.content-wrapper .contact-wrapper .card {
+    overflow: hidden;
+    background: url('../images/telephone.jpg') center no-repeat / cover;
+}
+
+.content-wrapper .contact-wrapper .right {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+.content-wrapper .contact-wrapper .col{
+    display: flex;
+}
+.content-wrapper .contact-wrapper .right .icon {
+    font-size: 40px;
+    margin-top: 20px;
+    margin-right: 10px;
+}
+
+.content-wrapper .contact-wrapper .right h4 {
+    font-weight: 300;
+}
+
+.content-wrapper .contact-wrapper .right p {
+    color: #444444;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.content-wrapper .title-wrapper h4 {
+    font-weight: 300;
+    position: relative;
+    margin: 50px 0;
+    padding: 10px 0;
+}
+
+.content-wrapper .title-wrapper h4::after {
+    content: "";
+    height: 2px;
+    width: 70px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ad1457;
+}
+#map{
+    height: 30vw;
+    min-height: 300px;
+}

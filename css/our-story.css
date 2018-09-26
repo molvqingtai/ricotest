@@ -1,0 +1,28 @@
+/* our-story */
+
+
+
+.content-wrapper .row {
+    margin-bottom: 50px;
+}
+.content-wrapper .row .card {
+    box-shadow: 18px 10px 15px 0px rgba(0, 0, 0, 0.3);
+}
+
+.content-wrapper .row img {
+    width: 100%;
+    height: auto;
+    vertical-align: middle;
+}
+.content-wrapper .row h3{
+    font-style: italic;
+}
+.content-wrapper .row p {
+    color: #666666;
+    line-height: 2em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 6;
+    -webkit-box-orient: vertical;
+}

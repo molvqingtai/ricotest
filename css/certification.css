@@ -1,0 +1,71 @@
+.content-wrapper{
+    margin-bottom: 100px;
+}
+
+.content-wrapper .faq-wrapper h4, .content-wrapper .certified-wrapper h4 {
+    font-weight: 300;
+    position: relative;
+    margin: 50px 0;
+    padding: 10px 0;
+}
+
+.content-wrapper .faq-wrapper h4::after, .content-wrapper .certified-wrapper h4::after {
+    content: "";
+    height: 2px;
+    width: 70px;
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #ad1457;
+}
+.content-wrapper .popout-wrapper{
+    float: none;
+    margin: 0 auto;
+    padding: 0;
+}
+.content-wrapper .popout-wrapper li{
+    margin-left: 3%;
+    margin-right: 3%;
+}
+.content-wrapper .collapsible-header {
+    justify-content: center;
+}
+
+.content-wrapper li.active .collapsible-header {
+    color: #ad1457;
+}
+
+.content-wrapper .collapsible-body {
+    font-weight: lighter;
+}
+
+.banner-wrapper.center {
+    margin: 100px 0;
+}
+
+.content-wrapper .card-image {
+    height: 240px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.content-wrapper .card-image .card-title {
+    position: static;
+    font-size: 50px;
+    font-weight: 300;
+}
+
+.content-wrapper .card-title a {
+    color: #FFFFFF;
+    transition: .5s;
+}
+.content-wrapper .card-title a:hover{
+    color: #ad1457;
+    letter-spacing: 3px;
+}

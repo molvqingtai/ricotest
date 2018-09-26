@@ -1,0 +1,42 @@
+/* news */
+
+.content-wrapper .row .card {
+    display: flex;
+    height: 176px;
+}
+
+.content-wrapper .row .card-image {
+    width: 250px;
+    height: 100%
+}
+.content-wrapper .row .card-content{
+    flex: 1;
+}
+.content-wrapper .row img{
+    width: 100%;
+    height: 100%;
+}
+.content-wrapper .card-content{
+    overflow: hidden;
+}
+.content-wrapper .row .card-title {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 0;
+    width: 100%;
+}
+
+.content-wrapper .row .card-time{
+    color: #666666;
+    font-weight: 300;
+}
+.content-wrapper .row .card-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    font-weight: 300;
+    height: 66px;
+}

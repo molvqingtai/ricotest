@@ -1,0 +1,20 @@
+/* test-type */
+.content-wrapper .col {
+    margin-bottom: 50px;
+}
+
+.content-wrapper .card-image {
+    height: 0;
+    padding-bottom: 70%;
+    overflow: hidden;
+}
+
+.content-wrapper .card-image img {
+    position: absolute;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+.content-wrapper .card-title {
+    height: 36px;
+}
