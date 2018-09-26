@@ -51,12 +51,9 @@ window.onload = () => {
                             //模拟 background-attachment:fixed 解决背景图不显示的bug
                             window.addEventListener('scroll', () => {
                                 let translateY = window.scrollY + 'px'
-                                // for (let i = 0; this.slides.length > i; i++) {
-                                //     this.slides[i].firstElementChild.style.transform = `translateY(${translateY})`
-                                // }
-                                document.querySelectorAll('.img-wrapper').forEach((e)=>{
-                                    e.style.transform = `translateY(${translateY})`
-                                })
+                                for (let i = 0; this.slides.length > i; i++) {
+                                    this.slides[i].firstElementChild.style.transform = `translateY(${translateY})`
+                                }
                             })
 
                             //setTimeout解决初始化无法获取$El的bug
