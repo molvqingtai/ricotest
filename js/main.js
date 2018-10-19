@@ -33,7 +33,6 @@ window.onload = () => {
             if (document.querySelectorAll('#pink-panel')[0]) {
                 document.querySelectorAll('#pink-panel')[0].style.height = screenHeight
             }
-
         },
         swiperStart() {
             if (window.innerWidth >= 933) {
@@ -48,14 +47,6 @@ window.onload = () => {
                     },
                     on: {
                         init() {
-                            //模拟 background-attachment:fixed 解决背景图不显示的bug
-                            window.addEventListener('scroll', () => {
-                                let translateY = window.scrollY + 'px'
-                                for (let i = 0; this.slides.length > i; i++) {
-                                    this.slides[i].firstElementChild.style.transform = `translateY(${translateY})`
-                                }
-                            })
-
                             //setTimeout解决初始化无法获取$El的bug
                             setTimeout(() => {
                                 let prevEl = this.navigation.$prevEl[0]
@@ -87,8 +78,10 @@ window.onload = () => {
 
         },
         scrollIntoView() {
+
             if (window.innerWidth >= 933) {
-                let html = document.documentElement;
+                let html = document.documentElement
+                let body = document.body
                 let backToTopBtn = document.querySelectorAll('#back-to-top')[0]
                 window.addEventListener('scroll', () => {
                     if (window.scrollY > 500) {
@@ -96,10 +89,17 @@ window.onload = () => {
                     } else {
                         backToTopBtn.classList.remove('scale-in')
                     }
+
                 })
                 backToTopBtn.addEventListener('click', () => {
                     let timer = window.setInterval(() => {
-                        html.scrollTop > 0 ? html.scrollTop -= 50 : window.clearInterval(timer)
+                        if (html.scrollTop > 0) {
+                            html.scrollTop -= 50
+                        } else if (body.scrollTop) {
+                            body.scrollTop -= 50
+                        } else {
+                            window.clearInterval(timer)
+                        }
                     }, 10)
                 })
             }
