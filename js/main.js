@@ -97,7 +97,7 @@ window.onload = () => {
                     let timer = window.setInterval(() => {
                         if (html.scrollTop > 0) {
                             html.scrollTop -= 50
-                        } else if (body.scrollTop) {
+                        } else if (body.scrollTop > 0) {
                             body.scrollTop -= 50
                         } else {
                             window.clearInterval(timer)
